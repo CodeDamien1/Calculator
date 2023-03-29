@@ -13,7 +13,7 @@ const App = () => {
   const backspace = () => {
     setResult(result.slice(0, result.length - 1)); //can also be done as -1
   }
-//calculator breaks when changing eval function to math.evaluate (accepts input excludes output) 
+//calculator breaks when changing eval function to math.evaluate (accepts input excludes output) -- FIXED changed function and added string
   const calculate = () => {
     try {
       console.log(result);
