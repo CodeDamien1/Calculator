@@ -16,7 +16,9 @@ const App = () => {
 //calculator breaks when changing eval function to math.evaluate (accepts input excludes output) 
   const calculate = () => {
     try {
-      setResult(Math.evaluate(result).toString());
+      console.log(result);
+      const output1 = String(Function ("return "+ result )());
+      setResult(output1);
     } catch(err) {
       setResult("Error")
     }
